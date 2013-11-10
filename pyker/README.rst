@@ -116,6 +116,21 @@ InsufficientDataError
 The audio file does not contain enough information.
 
 
+---------
+Constants
+---------
+
+The constants **GenderRecognizer.MALE** and **GenderRecognizer.FEMALE** are
+available to abstract you from the internal representation that the API uses
+for these values. Quick example:
+
+.. code:: python
+
+    recognizer = GenderRecognizer(audio_file)
+    result = recognizer.recognize()
+    assert result == GenderRecognizer.FEMALE
+
+
 -----
 Usage
 -----
