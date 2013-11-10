@@ -7,7 +7,8 @@ This library takes care of:
 
 * Audio format checking.
 * Audio format conversion.
-* Expand Voice Recognition API communication.
+* `Expand Voice Recognition API <https://github.com/expanduc/pyconuy>`_
+  communication.
 * Sync or async modes.
 
   + Poll the server until the recognition is finished (sync).
@@ -120,7 +121,9 @@ Usage
 -----
 
 You will need an audio file of any format, Pyker will convert it to the
-appropriate format if needed. Here is an example::
+appropriate format if needed. Here is an example:
+
+.. code:: python
 
     # -*- coding: utf-8 -*-
     from pyker import GenderRecognizer
@@ -135,7 +138,10 @@ appropriate format if needed. Here is an example::
 
     print('Female' if recognizer.is_female() else 'Male')
 
-You can do this in a synchronous way as well::
+
+You can do this in a synchronous way as well:
+
+.. code:: python
 
     # -*- coding: utf-8 -*-
     from pyker import GenderRecognizer
@@ -152,11 +158,17 @@ You can do this in a synchronous way as well::
 Running the tests
 -----------------
 
-To run the test suite you need to install the development dependencies first::
+To run the test suite you need to do 2 quick things.
+
+* Install the development dependencies::
+
+.. code:: sh
 
     $ pip install -r requirements-dev.pip
 
-Then just run the tests::
+* Run the tests::
+
+.. code:: sh
 
     $ PYTHONPATH=`pwd` nosetests --with-coverage --cover-package=pyker
 
