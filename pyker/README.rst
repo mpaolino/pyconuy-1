@@ -207,6 +207,6 @@ Questions?
 
 Read the source =)
 
-Or find me as @tuxie_ in twitter.
+Or find me as `@tuxie_ <https://twitter.com/tuxie_>`_ in twitter.
 
 Happy hacking!
